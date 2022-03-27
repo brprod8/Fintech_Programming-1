@@ -1,2 +1,2 @@
-# finicial-programming-1
-fintech-programming 1
+# Fintech-Programming-1
+by : Robert Smith
