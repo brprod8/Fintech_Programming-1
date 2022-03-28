@@ -46,7 +46,7 @@ monthly_contribution = 2000
 months_recurred = 0
 
 return_on_investment_monthly = (10 / 100)/12
-# 10% is very common for return on investment(S&P 500)
+# 10% is very common for return on investment(S&P 500) divided by 12 is 0.83% (low risk)
 # return on investment is being added everymonth
 
 
@@ -57,7 +57,7 @@ def monthly(current_amount, months_recurred):
         months_recurred += 1
         return monthly(current_amount, months_recurred)
         # recussion is taking place because we is calling the def function monthly
-        # the values from (current_amount, months_recurred) have not chnage
+        # the values from (current_amount, months_recurred) have changed
         # and will keep running and changing until if statement false
 
     else:
