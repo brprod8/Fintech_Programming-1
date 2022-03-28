@@ -34,7 +34,7 @@ total_value = sum(loan_costs)
 # # # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # # # Print the average loan amount
 # # # YOUR CODE HERE!
-Average_loan_Amount = total_value / len(loan_costs)
+Average_loan_Amount = total_value / number
 
 # print(Average_loan_Amount)
 # """Part 2: Analyze Loan Data.
@@ -116,7 +116,7 @@ new_loan = {
 
 
 def p_value(loantest: dict):
-    return loantest.get("future_value") / (1 + .2 / 12) ** loantest.get("remaining_months")
+    return loantest.get("future_value") / (1 + Discount_Rate / 12) ** loantest.get("remaining_months")
 
 
 # # @TODO: Define a new function that will be used to calculate present value.
