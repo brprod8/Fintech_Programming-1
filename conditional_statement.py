@@ -1,4 +1,7 @@
-"""A Logical Processor."""
+#  Here is conditonals statements from basic to complex
+
+#              (Basic conditionals)
+
 
 # 1. @TODO: Create two new variables to hold user data:
 # Populate this variable with our first user, who is based in the United States
@@ -30,7 +33,9 @@ if location == "United States" and is_registered is True:
 else:
     print("Crypto Payments - Coming Soon!")
 
-# New activity
+    #           (Complex conditionals)
+
+
 issue_currency = "USD"
 price = 30.0
 
@@ -48,3 +53,30 @@ if price >= 0:
 else:
     # If price is negative.
     print("Error, the price listed is a negative number")
+
+#                (Nested Conditonals)
+# @TODO: Create variables with the initial ad price and company type
+# YOUR CODE HERE!
+ad_price = 10
+company_type = ("Startup".lower())
+if ad_price < 20:
+    print("buy it")
+
+else:
+    print("To expensive to buy")
+
+
+# @TODO: Convert the following decision logic into valid Python code.
+
+if ad_price < 20:
+    if company_type == "startup":
+        print('that the expected profit is 500')
+
+    elif company_type == "existing":
+        print('that the expected profit is 100')
+
+    else:
+        print('that the company type is not specified')
+
+else:
+    print('that the ad price is too expensive')
